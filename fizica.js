@@ -72,6 +72,9 @@ function displaySet(index){
 
  
     gridContainer1.innerHTML=`<span>Setul ${index+1}</span>`;
-    for(let i = 1 ; i<101;i++)
+    for(let i = 1 ; i<10;i++)
     {gridContainer1.innerHTML+=`<a class="grid-items light-mode" target="_blank" href="e_f_termodinamica_s${ReturnNumOfI(index+1)}_00${i}.pdf">Fisa ${i}</a>`;}
+    for(let i = 10 ; i<100;i++)
+      {gridContainer1.innerHTML+=`<a class="grid-items light-mode" target="_blank" href="e_f_termodinamica_s${ReturnNumOfI(index+1)}_0${i}.pdf">Fisa ${i}</a>`;}
+    gridContainer1.innerHTML+=`<a class="grid-items light-mode" target="_blank" href="e_f_termodinamica_s${ReturnNumOfI(index+1)}_${100}.pdf">Fisa ${100}</a>`;
 }
