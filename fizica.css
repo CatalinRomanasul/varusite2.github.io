@@ -20,6 +20,17 @@ body ,h1{
   gap: 0;
   border:1px black solid;
 }
+button{
+  padding:6px 4px 6px 4px;
+  border: 2px none; 
+  transition: 0.25s;
+  font-size: 1em;
+  margin:4px 0px 5px 10px;
+  cursor: pointer;
+}
+button:hover{color: orange;
+background-color: rgb(3, 189, 12);
+font-weight: 800;}
 
 a{width: max-content;
   height: max-content;
@@ -35,6 +46,10 @@ transition: ease-in-out 0.20s;}
   .grid-items-container{
     grid-template-columns: repeat(3, 1fr);
   }
+  .js-grid-items-container2,
+  .js-grid-items-container3 {
+    display: none;
+  }
 }
 
 a:hover{
@@ -43,7 +58,7 @@ a:hover{
 }
 span{
   display: block;
-  font-size: 5vh;
+  font-size: 3.6vh;
   margin: 0.4vh;
   color: blue;
   font-weight: 800;
@@ -52,6 +67,29 @@ h1{
   text-align: center;
   font-size: 5vh;
 }
-.dark-mode{ color: white;
+.dark-mode{  color: white;
   background-color: #333;}
 .light-mode{color:black;background-color: white;}
+
+.button-set1{
+  color: blue;
+}
+.button-set1:hover{
+  background-color: blue;
+  color: white;
+}
+.button-set2{
+  color: red;
+}
+.button-set2:hover{
+  background-color: red;;
+  color: white;
+}
+
+.button-set3{
+  color: green;
+}
+.button-set3:hover{
+  background-color: green;
+  color: white;
+}
