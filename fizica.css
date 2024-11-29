@@ -1,50 +1,38 @@
 
-body ,h1{
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 900;
-}
+
+
 
 .Grid-Display{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   width: 100%;
   height: 90vh;
+  
 }
-.grid-items-container{
-  padding: 0vh 0vh 0vh 0vh;
 
-  margin-top: 10px;
+.grid-items-container{
+  margin:10px 0px 4px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  animation: rainbowBorder 1s linear infinite;
+  grid-template-columns: repeat(6, 1fr);
   width: 1fr;
   gap: 0;
-  border:1px black solid;
+  border:1px solid;
+  -webkit-box-shadow: inset -9px 24px 55px -64px rgba(196,194,196,0.91);
+-moz-box-shadow: inset -9px 24px 55px -64px rgba(196,194,196,0.91);
+box-shadow: inset -9px 24px 55px -64px rgba(196,194,196,0.91);
 }
-button{
-  padding:6px 4px 6px 4px;
-  border: 2px none; 
-  transition: 0.25s;
-  font-size: 1em;
-  margin:4px 0px 5px 10px;
-  cursor: pointer;
+
+.grid-items{
+  animation: rainbowText 5s infinite linear;
 }
-button:hover{color: orange;
-background-color: rgb(3, 189, 12);
-font-weight: 800;}
-
-a{width: max-content;
-  height: max-content;
-margin:1vh 1vh 1vh 1vh;
-font-size: 2vh;
-text-decoration: none;
-transition: ease-in-out 0.20s;}
-
+.grid-items:hover{
+  animation: none;
+}
 @media (max-width: 600px) {
-  .Grid-Display {
-    grid-template-columns: repeat(1, 1fr); /* Adjust to 2 items per row */
-  }
+
   .grid-items-container{
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
   .js-grid-items-container2,
   .js-grid-items-container3 {
@@ -62,11 +50,14 @@ span{
   margin: 0.4vh;
   color: blue;
   font-weight: 800;
+  animation: rainbowText 5s infinite linear;
 }
+
 h1{
   text-align: center;
   font-size: 5vh;
 }
+
 .dark-mode{  color: white;
   background-color: #333;}
 .light-mode{color:black;background-color: white;}
@@ -77,6 +68,7 @@ h1{
 .button-set1:hover{
   background-color: blue;
   color: white;
+  
 }
 .button-set2{
   color: red;
@@ -91,5 +83,12 @@ h1{
 }
 .button-set3:hover{
   background-color: green;
+  color: white;
+}
+.button-info{
+  color: purple
+}
+.button-info:hover{
+  background-color: purple;
   color: white;
 }
